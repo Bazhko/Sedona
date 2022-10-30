@@ -1,176 +1,177 @@
 <!DOCTYPE html>
-<html lang='ru'>
-<head>
+<html class='page' lang='ru'>
+  <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Отзыв об отеле</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header class='page-header'>
 
-        <a class='page-header__logo' href='#' aria-label='Логотип сайта Sedona'>
-          <img width='' height='' alt=''>
-        </a>
-        
-        <nav class='page-nav main-nav_closed main-nav_no-js'>
-    
-          <button class='main-nav__toggle' type='button'>
-            <span class='visually-hidden'>Открыть меню</span>
-            <span class='main-nav__toggle-line main-nav__toggle-line_first'></span>
-            <span class='main-nav__toggle-line main-nav__toggle-line_second'></span>
-            <span class='main-nav__toggle-line main-nav__toggle-line_third'></span>
-          </button>
-    
-          <ul class='page-nav__list'>
-            <li class='page-nav__item'>
-              <a class='page-nav__link' href='index.html'>Главная</a>
-            </li>
-            <li class='page-nav__item'>
-              <a class='page-nav__link' href='catalog.html'>Фото и видео</a>
-            </li>
-            <li class='page-nav__item'>
-              <a class='page-nav__link' href='#'>Форма отзыва</a>
-            </li>
-            <li class='page-nav__item'>
-              <a class='page-nav__link' href='#'>HTML academy</a>
-            </li>
-          </ul>
-    
-        </nav>
-      </header>
+      <a class='page-header__logo' href='#' aria-label='Логотип сайта Sedona'>
+        <img width='' height='' alt=''>
+      </a>
 
-      <main>
-        <header class='review-page__header'>
-      
-        </header>
+      <nav class='page-nav main-nav_closed main-nav_no-js'>
 
-        <h1 class='visually-hidden'>Форма отзыва</h1>
+        <button class='main-nav__toggle' type='button'>
+          <span class='visually-hidden'>Открыть меню</span>
+          <span class='main-nav__toggle-line main-nav__toggle-line_first'></span>
+          <span class='main-nav__toggle-line main-nav__toggle-line_second'></span>
+          <span class='main-nav__toggle-line main-nav__toggle-line_third'></span>
+        </button>
 
-        <section class='review-intro'>
-            <h1 class='review-intro__heading'>Оставьте свой отзыв</h1>
-            <p class='review-intro__text'>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</section>
-        </section>
-
-        <form class='review-form' action='#' method='get'>
-
-          <fieldset class='review-form__name-fieldset'>
-            <h2 class='review-form__ fieldset-title'>Представьтесь</h2>
-
-            <label class='review-form__label'>Имя*:
-              <input class='review-form__input review-form__firs-name-input' type='text' name='review__first-name-input' placeholder='Петр'>
-            </label>
-
-            <label class='review-form__label'>Фамилия*:
-              <input class='review-form__input review-form__last-name-input' type='text' name='review__last-name-input' placeholder='Иванов'>
-            </label>
-
-            <label class='review-form__label'>Отчество*:
-              <input class='review-form__input review-form__patronymic-input' type='text' name='review__patronymic-input' placeholder='Александрович'>
-            </label>
-          </fieldset>
-
-          <fieldset class='review-form__contacts-fieldset'>
-            <h2 class='review-form__ fieldset-title'>Контактная информация:</h2>
-            <label lass='review-form__label'>Контактный телефон*:
-              <input class='review-form__input review-form__phone-input' type='tel' name='review__first-name-input' placeholder='Введите телефон'>
-            </label>
-
-            <label class='review-form__label'>Электронная почта*:
-              <input class='review-form__input review-form__email-input' type='email' name='review__email-input' placeholder='Введите e-mail'>
-            </label>
-          </fieldset>
-
-          <fieldset class='review-form__impression-fieldset'>
-            <h2 class='review-form__ fieldset-title'>Ваше Общее впечатление:</h2>
-            <label class='review-form__label'>
-              <input class='review-form__radio-input' type='radio' name='choose-impression-rate' value='rather-positive' checked>
-              <span class='form__radio'></span>
-              Скорее положительное
-            </label>
-
-            <label class='review-form__label'>
-              <input class='review-form__radio-input' type='radio' name='choose-impression-rate' value='rather-negative'>
-              <span class='form__radio'></span>
-              Скорее отрицательное
-            </label>
-
-            <label class='review-form__label'>
-              <input class='review-form__radio-input' type='radio' name='choose-impression-rate' value='Difficult-to-answer'>
-              <span class='form__radio'></span>
-              Затрудняюсь ответить
-            </label>
-          </fieldset>
-
-          <fieldset class='review-form__visited-fieldset'>
-            <h2 class='review-form__ fieldset-title'>Посещенные достопримечательности:</h2>
-            <label class='review-form__label'>
-              <input class='review-form__checkbox-input' type='checkbox' name='Devil's-Bridge' checked>
-              <span class='form__check-box'></span>
-              Мост Дьявола
-            </label>
-
-            <label class='review-form__label'>
-              <input class='review-form__checkbox-input' type='checkbox' name='Bell-mount' checked>
-              <span class='form__check-box'></span>
-              Гора-Колокол
-            </label>
-
-            <label class='review-form__label'>
-              <input class='review-form__checkbox-input' type='checkbox' name='Slide-park' checked>
-              <span class='form__check-box'></span>
-              Слайд-парк
-            </label>
-
-            <label class='review-form__label'>
-              <input class='review-form__checkbox-input' type='checkbox' name='Red-rocks'>
-              <span class='form__check-box'></span>
-              Красные скалы
-            </label>
-          </fieldset>
-
-          <fieldset class='review-form__review-text-fieldset'>
-            <h2 class='review-form__ fieldset-title'>Опишите свои эмоции:</h2>
-            <label class='review-form__label'>
-              <span class='visually-hidden'>Поле ввода комментария</span>
-              <textarea class='review-form__textarea-input'  name='review-text' placeholder='Опишите подробно все свои восторги'></textarea>
-            </label>
-          </fieldset>
-
-          <div class='review-form__button-wrapper'>
-            <p class='review-form__notation'>* — Обязательные поля</p>
-            <button class='review-form__submit-button button button_blue' type='submit'>отправить отзыв</button>
-          </div>
-        </form>
-        
-      </main>
-
-      <footer class='page-footer'>
-        <a class='page-footer__tag-link' href='#'>#visitsedona</a>
-    
-        <ul class='social-links'>
-          <li class='social-links__item'>
-            <a class='social-links__link' href='#'>
-              <span class='visually-hidden'>Twitter</span>
-            </a>
+        <ul class='page-nav__list'>
+          <li class='page-nav__item'>
+            <a class='page-nav__link' href='index.html'>Главная</a>
           </li>
-    
-          <li class='social-links__item'>
-            <a class='social-links__link' href='#'>
-              <span class='visually-hidden'>Facebook</span>
-            </a>
+          <li class='page-nav__item'>
+            <a class='page-nav__link' href='catalog.html'>Фото и видео</a>
           </li>
-    
-          <li class='social-links__item'>
-            <a class='social-links__link' href='#'>
-              <span class='visually-hidden'>Youtube</span>
-            </a>
+          <li class='page-nav__item'>
+            <a class='page-nav__link' href='#'>Форма отзыва</a>
+          </li>
+          <li class='page-nav__item'>
+            <a class='page-nav__link' href='#'>HTML academy</a>
           </li>
         </ul>
-    
-        <a class='copyright' href='#'>
-          <p class='copyright__text'>Разработано</p>
-        </a>
-      </footer>
-    </body>
+
+      </nav>
+    </header>
+
+    <main>
+      <header class='review-page__header'>
+
+      </header>
+
+      <h1 class='visually-hidden'>Форма отзыва</h1>
+
+      <section class='review-intro'>
+          <h1 class='review-intro__heading'>Оставьте свой отзыв</h1>
+          <p class='review-intro__text'>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</section>
+      </section>
+
+      <form class='review-form' action='#' method='get'>
+
+        <fieldset class='review-form__name-fieldset'>
+          <h2 class='review-form__ fieldset-title'>Представьтесь</h2>
+
+          <label class='review-form__label'>Имя*:
+            <input class='review-form__input review-form__firs-name-input' type='text' name='review__first-name-input' placeholder='Петр'>
+          </label>
+
+          <label class='review-form__label'>Фамилия*:
+            <input class='review-form__input review-form__last-name-input' type='text' name='review__last-name-input' placeholder='Иванов'>
+          </label>
+
+          <label class='review-form__label'>Отчество*:
+            <input class='review-form__input review-form__patronymic-input' type='text' name='review__patronymic-input' placeholder='Александрович'>
+          </label>
+        </fieldset>
+
+        <fieldset class='review-form__contacts-fieldset'>
+          <h2 class='review-form__ fieldset-title'>Контактная информация:</h2>
+          <label lass='review-form__label'>Контактный телефон*:
+            <input class='review-form__input review-form__phone-input' type='tel' name='review__first-name-input' placeholder='Введите телефон'>
+          </label>
+
+          <label class='review-form__label'>Электронная почта*:
+            <input class='review-form__input review-form__email-input' type='email' name='review__email-input' placeholder='Введите e-mail'>
+          </label>
+        </fieldset>
+
+        <fieldset class='review-form__impression-fieldset'>
+          <h2 class='review-form__ fieldset-title'>Ваше Общее впечатление:</h2>
+          <label class='review-form__label'>
+            <input class='review-form__radio-input' type='radio' name='choose-impression-rate' value='rather-positive' checked>
+            <span class='form__radio'></span>
+            Скорее положительное
+          </label>
+
+          <label class='review-form__label'>
+            <input class='review-form__radio-input' type='radio' name='choose-impression-rate' value='rather-negative'>
+            <span class='form__radio'></span>
+            Скорее отрицательное
+          </label>
+
+          <label class='review-form__label'>
+            <input class='review-form__radio-input' type='radio' name='choose-impression-rate' value='Difficult-to-answer'>
+            <span class='form__radio'></span>
+            Затрудняюсь ответить
+          </label>
+        </fieldset>
+
+        <fieldset class='review-form__visited-fieldset'>
+          <h2 class='review-form__ fieldset-title'>Посещенные достопримечательности:</h2>
+          <label class='review-form__label'>
+            <input class='review-form__checkbox-input' type='checkbox' name='Devil's-Bridge' checked>
+            <span class='form__check-box'></span>
+            Мост Дьявола
+          </label>
+
+          <label class='review-form__label'>
+            <input class='review-form__checkbox-input' type='checkbox' name='Bell-mount' checked>
+            <span class='form__check-box'></span>
+            Гора-Колокол
+          </label>
+
+          <label class='review-form__label'>
+            <input class='review-form__checkbox-input' type='checkbox' name='Slide-park' checked>
+            <span class='form__check-box'></span>
+            Слайд-парк
+          </label>
+
+          <label class='review-form__label'>
+            <input class='review-form__checkbox-input' type='checkbox' name='Red-rocks'>
+            <span class='form__check-box'></span>
+            Красные скалы
+          </label>
+        </fieldset>
+
+        <fieldset class='review-form__review-text-fieldset'>
+          <h2 class='review-form__ fieldset-title'>Опишите свои эмоции:</h2>
+          <label class='review-form__label'>
+            <span class='visually-hidden'>Поле ввода комментария</span>
+            <textarea class='review-form__textarea-input'  name='review-text' placeholder='Опишите подробно все свои восторги'></textarea>
+          </label>
+        </fieldset>
+
+        <div class='review-form__button-wrapper'>
+          <p class='review-form__notation'>* — Обязательные поля</p>
+          <button class='review-form__submit-button button button_blue' type='submit'>отправить отзыв</button>
+        </div>
+      </form>
+
+    </main>
+
+    <footer class='page-footer'>
+      <a class='page-footer__tag-link' href='#'>#visitsedona</a>
+
+      <ul class='social-links'>
+        <li class='social-links__item'>
+          <a class='social-links__link' href='#'>
+            <span class='visually-hidden'>Twitter</span>
+          </a>
+        </li>
+
+        <li class='social-links__item'>
+          <a class='social-links__link' href='#'>
+            <span class='visually-hidden'>Facebook</span>
+          </a>
+        </li>
+
+        <li class='social-links__item'>
+          <a class='social-links__link' href='#'>
+            <span class='visually-hidden'>Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class='copyright' href='#'>
+        <p class='copyright__text'>Разработано</p>
+      </a>
+    </footer>
+  </body>
 </html>
