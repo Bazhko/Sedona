@@ -4,24 +4,18 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="css/style.css">
     <title>City of Sedona</title>
   </head>
 
   <body class='page-body'>
     <header class='page-header'>
 
-      <a class='page-header__logo' href='#' aria-label='Логотип сайта Sedona'>
-        <img width='' height='' alt=''>
-      </a>
+      <nav class='page-nav page-nav_closed page-nav_no-js'>
 
-      <nav class='page-nav main-nav_closed main-nav_no-js'>
-
-        <button class='main-nav__toggle' type='button'>
-          <span class='visually-hidden'>Открыть меню</span>
-          <span class='main-nav__toggle-line main-nav__toggle-line_first'></span>
-          <span class='main-nav__toggle-line main-nav__toggle-line_second'></span>
-          <span class='main-nav__toggle-line main-nav__toggle-line_third'></span>
-        </button>
+        <a class='page-header__page-logo' href='#' aria-label='Логотип сайта Sedona'>
+          <img src='img/logotype-mobile.svg' width='102px' height='84px' alt='Логотип сайта'>
+        </a>
 
         <ul class='page-nav__list'>
           <li class='page-nav__item'>
@@ -38,14 +32,22 @@
           </li>
         </ul>
 
+        <button class='page-nav__toggle' type='button'>
+          <span class='visually-hidden'>Открыть меню</span>
+          <span class='page-nav__toggle-line page-nav__toggle-line_first'></span>
+          <span class='page-nav__toggle-line page-nav__toggle-line_second'></span>
+          <span class='page-nav__toggle-line page-nav__toggle-line_third'></span>
+        </button>
+
       </nav>
+
+      <div class="page-header__welcome-block page-header__welcome-block_main">
+        <img class="page-header__welcome-text" src="img/header__welcome-block__text.svg" width="282px" height="214px"  alt="Welcome to Sedona">
+      </div>
+
     </header>
 
     <main class='page-main'>
-
-      <header class='page-main__header'>
-
-      </header>
 
       <section class='main-intro'>
         <h1 class='main-intro__title'>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -165,6 +167,23 @@
         <p class='copyright__text'>Разработано</p>
       </a>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.page-nav');
+      var navToggle = document.querySelector('.page-nav__toggle');
+
+      navMain.classList.remove('page-nav_no-js');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('page-nav_closed')) {
+          navMain.classList.remove('page-nav_closed');
+          navMain.classList.add('page-nav_opened');
+        } else {
+          navMain.classList.add('page-nav_closed');
+          navMain.classList.remove('page-nav_opened');
+        }
+      });
+    </script>
 
   </body>
 </html>
